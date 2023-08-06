@@ -31,10 +31,10 @@ public class ReviewController {
     public ResponseEntity<Optional<Review>> getsingleReview(@PathVariable String id){
         return new ResponseEntity<Optional<Review>>(reviewService.singleReview(id), HttpStatus.OK);
     }
-    @DeleteMapping("{id}")
-    public ResponseEntity<Optional<Review>> delete(@PathVariable String id){
-        return new ResponseEntity<Optional<Review>>(reviewService.deleteReview(id), HttpStatus.ACCEPTED);
-
-    }
+//    @DeleteMapping("{id}")
+//    public ResponseEntity<Optional<Review>> delete(@PathVariable String id){
+//        return new ResponseEntity<Optional<Review>>(reviewService.deleteReview(id), HttpStatus.ACCEPTED);
+//
+//    }
 
 }

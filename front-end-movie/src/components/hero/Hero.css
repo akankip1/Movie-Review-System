@@ -60,10 +60,13 @@
     transition: 0.3s;
     cursor: pointer;
 }
-.play-button-icon:hover{
+
+.play-button-icon:hover 
+{
     font-size: 4rem;
     color:white;
 }
+
 
 @media only screen and (max-width: 800px) {
     .movie-detail{

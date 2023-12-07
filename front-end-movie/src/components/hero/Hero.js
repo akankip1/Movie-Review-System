@@ -34,11 +34,19 @@ const Hero = ({movies}) => {
                                     </div>
                                     <div className="movie-buttons-container">
                                         <Link to={`/Trailer/${movie.trailerLink.substring(movie.trailerLink.length - 11)}`}>
-                                            <div className="play-button-icon-container">
-                                                <FontAwesomeIcon className="play-button-icon"
-                                                    icon = {faCirclePlay}
-                                                />
-                                            </div>
+                                            
+                                        
+                                            <div className="play-button-icon-container">       
+                                                  
+                                                    
+                                                        <FontAwesomeIcon className="play-button-icon"
+                                                        icon = {faCirclePlay}
+                                                    />
+                                                    
+                                                    
+                                                </div>
+                                                
+                                            
                                         </Link>
 
                                         <div className="movie-review-button-container">

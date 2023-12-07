@@ -24,8 +24,11 @@ export default function Header(){
                         <NavLink className ="nav-link" to="/">Home</NavLink>
                         {/* <NavLink className ="nav-link" to="/watchList">Watch List</NavLink>       */}
                     </Nav>
-                    <Button variant="outline-info" className="me-2">Login</Button>
-                    <Button variant="outline-info">Register</Button>
+                    <NavLink to="https://akankip1.github.io/Portfolio-Ashrit-Kankipati/" target="_blank">
+                    <Button variant="outline-info" className="me-2">About</Button>
+                    </NavLink>
+                    
+                    
                 </Navbar.Collapse>
             </Container>
         </Navbar>

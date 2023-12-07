@@ -26,9 +26,9 @@ public class MovieController {
     public ResponseEntity<Optional<Movie>> getsingleMovie(@PathVariable String id){
         return new ResponseEntity<Optional<Movie>>(movieservice.singleMovie(id),HttpStatus.OK);
     }
-//    @PostMapping
-//    public ResponseEntity<Movie> createMovie(@RequestBody Map<String,String> payload){
-//        return new ResponseEntity<Movie>(movieservice.create(payload.get("imdbId"),payload.get("title")), HttpStatus.CREATED);
-//
-//    }
+    @PostMapping
+    public ResponseEntity<Movie> createMovie(@RequestBody Map<String,String> payload){
+        return new ResponseEntity<Movie>(movieservice.create(payload.get("imdbId"),payload.get("title")), HttpStatus.CREATED);
+
+    }
 }
